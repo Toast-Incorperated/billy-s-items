@@ -26,8 +26,6 @@ import java.util.UUID;
 public class BillysItems {
     public static final String MODID = "billy_items";
     
-    public static final UUID SOUL_OF_THE_CREATOR = UUID.fromString("f9048245-89cb-456c-aa2b-cc8e9d8b8c76");
-    
     public static SimpleChannel packetInstance;
     
     public BillysItems() {
