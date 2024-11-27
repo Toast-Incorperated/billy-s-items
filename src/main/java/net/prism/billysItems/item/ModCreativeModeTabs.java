@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                     
                     pOutput.accept(ModItems.SWORD2.get());
+                    pOutput.accept(ModItems.HHAMR.get());
                     
                     })
                     .build());
