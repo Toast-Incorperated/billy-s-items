@@ -17,6 +17,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.network.simple.SimpleChannel;
+import net.prism.billysItems.block.ModBlocks;
 import net.prism.billysItems.item.ModCreativeModeTabs;
 import net.prism.billysItems.item.ModItems;
 
@@ -35,6 +36,7 @@ public class BillysItems {
         ModCreativeModeTabs.register(modEventBus);
         
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         
         
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::Setup);

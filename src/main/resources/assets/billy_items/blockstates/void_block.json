@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "billy_items:block/void_block"
+    }
+  }
+}

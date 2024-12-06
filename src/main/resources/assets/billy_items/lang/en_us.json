@@ -1,5 +1,10 @@
 {
+  "block.billy_items.void_block": "Template Block",
+
+
   "item.billy_items.sword_2": "The big sword",
   "item.billy_items.warforged_hammer": "HAMMAR",
+
+
   "creative_tab.billy_items.mod_tab": "Mod tab"
 }

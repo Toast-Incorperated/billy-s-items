@@ -10,6 +10,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.prism.billysItems.BillysItems;
+import net.prism.billysItems.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     Minecraft minecraft = Minecraft.getInstance();
@@ -21,10 +22,15 @@ public class ModCreativeModeTabs {
     public static final RegistryObject<CreativeModeTab> MOD_TAB = CREATIVE_MODE_TABS.register("mod_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SWORD2.get()))
                     .title(Component.translatable("creative_tab.billy_items.mod_tab"))
-                    .displayItems((pParameters, pOutput) -> {
+                    .displayItems((pParameters, items) -> {
                     
-                    pOutput.accept(ModItems.SWORD2.get());
-                    pOutput.accept(ModItems.HHAMR.get());
+                    
+                    // how to accept an item
+                    items.accept(ModItems.SWORD2.get());
+                    items.accept(ModItems.HHAMR.get());
+                    
+                    //How to accept a block
+                    items.accept(ModBlocks.VOID_BLOCK.get());
                     
                     })
                     .build());
